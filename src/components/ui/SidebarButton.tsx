@@ -13,11 +13,9 @@ const SidebarButton = ({ link, label }: SidebarButtonProps) => {
   }
 
   return (
-    <div className="h-10 hover:bg-blue-500 hover:cursor-pointer">
-      <button className="font-bold" onClick={routeChange}>
-        {label}
-      </button>
-    </div>
+    <button className="text-gray-500 hover:text-blue-800 hover:underline font-bold h-10 block" onClick={routeChange}>
+      {label}
+    </button>
   )
 }
 
